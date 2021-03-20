@@ -1,0 +1,58 @@
+/* Size Units*/
+/* 
+Relative - Depends on the Screen
+>em - size depends on font size of the nearest PARENT
+>rem - size dependes on the font size of ROOT
+
+Absolute - Fixed
+>px
+*/
+/*
+Color value 
+p {
+    color: salmon;
+}
+
+p {
+    color: #2192dd;
+}
+
+p {
+    color: rgba(49, 243, 0, 0.856);
+}
+*/
+
+#ColorProperties p {
+    color: rgb(49, 168, 19);
+}
+
+#ColorProperties button {
+    background-color: #a3d2f1;
+}
+
+#TextProperties h1 {
+    text-transform: ;
+
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    text-decoration: tomato underline;
+}
+
+#TextProperties a {
+    color: steelblue;
+    text-decoration: none;
+    font-style: italic;
+}
+
+#TextProperties h2 {
+    font-weight: normal;
+}
+
+#TextProperties p {
+    text-align: justify;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    text-indent: 2em;
+}

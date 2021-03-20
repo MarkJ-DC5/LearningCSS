@@ -1,0 +1,87 @@
+/* Specifty */
+/* Same selector - Class will take in */
+/* A more specific selector is the one that will followed */
+/* ID > (CLass, Attribute, Pseudo-Class) > (Element, Pseudo-Element) */
+
+/* Element Seclector */
+button {
+    font-size: 1em;
+    background-color: rgb(241, 250, 238);
+}
+
+h1, h2 {
+    color: 1D3557;
+}
+
+/* Id Selector */
+#signup {
+    background-color: rgb(29, 53, 87);
+    color: rgb(241, 250, 238);
+    font-weight: ;
+}
+
+span {
+    color: #457B9D;
+}
+
+/* Class Selector */
+.tag {
+    background-color: #E63946;
+    color: rgb(241, 250, 238);
+    font-size: .6em;
+}
+
+/* Decendant Selector */
+.post a {
+    color: #457B9D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Adjacent Selecter - selct the element that preceded */
+/* input + button {
+    background-color: #A8DADC;
+} */
+
+h2 + button {
+    font-size: 1em;
+    background-color: #A8DADC;
+}
+
+/* Direct Child */
+footer > a {
+    color: #457B9D;
+}
+
+/* Attribute Selector */
+/*
+    elemet[property=value] {}
+    = exact value
+    ^ start with the specifed value
+    $ end with the specifed value
+    * anywhere the specified value is located
+ */
+input[type="password"] {
+    color: red;
+}
+
+/* Pseudo Class */
+.post button:hover {
+    background-color: #E63946;
+    color: white;
+}
+
+.post a:hover {
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+.post:nth-of-type(3n) {
+    background-color: whitesmoke;
+}
+
+/* Pseudo Elements */
+h2::first-letter {
+    font-size: 1.5em;
+}
+
