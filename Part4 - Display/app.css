@@ -1,0 +1,62 @@
+.bToi {
+    background-color: gold;
+    border: 2px solid black;
+    display: inline;
+}
+
+.iTob {
+    background-color: aqua;
+    display: block;
+    padding: 2em;
+    margin: 2em 1em;
+}
+
+#inlineLimit {
+    background-color: peru;
+    color: white;
+    width: 2em; /* No Effect*/
+    padding: 1.5em; /*layering Effecr*/
+    margin: 2em;; /*Also Not Working Properly */
+}
+
+/* Inline-Block */
+/* fixes the issue of inline */
+#inBl {
+    display: inline-block;
+    background-color: peru;
+    color: white;
+    width: 4em; /* No Effect*/
+    padding: 1.5em; /*layering Effecr*/
+    margin: 2em;; /*Also Not Working Properly */
+}
+
+/* Problems with Inline Part 2 */
+#inDemo .square:nth-of-type(1n){
+    background-color: black;
+    width: 250px;
+    height: 250px;
+    display: inline;
+}
+
+#inDemo .square:nth-of-type(2n){
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    display: inline;
+}
+
+#inBlDemo .square:nth-of-type(1n){
+    background-color: black;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+}
+
+#inBlDemo .square:nth-of-type(2n){
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+}
+
+/* display: none; hides element */

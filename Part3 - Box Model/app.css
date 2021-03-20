@@ -1,0 +1,57 @@
+/* Width and Height */
+/* This determines the Size of the Element */
+#elemSize p {
+    width: 20em;
+    height: 10em;
+    background-color: rgb(180, 203, 224);
+}
+
+#borderss #first{
+    /* top right bottom left */
+    border-style: solid; 
+    border-color: black;
+    border-width: 5px;
+
+    /* Have the border be inside of the element */
+    box-sizing: border-box; 
+    /* content-box - border is created outside of the element */
+}
+#borderss #second{
+    /* style color size */
+    border: solid blueviolet 5px;
+    box-sizing: content-box; 
+    aligal    border-radius: 10px;
+}
+
+#paddingg p {
+    background-color: coral;
+    border: solid black 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    /* Apply to all four sides */
+    padding: 50px;
+    /* space between element and border */
+/*
+    vertical | horizontal
+    padding: 5% 10%;
+
+    top | horizontal | bottom
+    padding: 1em 2em 2em;
+
+    top | right | bottom | left
+    padding: 5px 1em 0 2em; 
+*/
+}
+
+#marginss p{
+    background-color: oldlace;
+    margin: 50px;
+/* 
+    all
+    vertical | horizontal
+    top | horizontal | bottom
+    top | right | bottom | left
+*/
+
+}

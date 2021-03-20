@@ -1,0 +1,49 @@
+div {
+    background-color: steelblue;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    border: 5px solid black;
+}
+
+.middle {
+    background-color: yellow;
+}
+
+
+#satic .middle{
+    position: static;
+}
+
+
+#relative div {
+    position: relative;
+    z-index: 1;
+}
+
+#relative .middle{
+    position: relative;
+    top: 25px;
+    left: 25px;
+    z-index: 0;
+}
+
+#absolute .middle{
+    position: absolute;
+    top: 25px;
+    right: 245px;
+    text-align: center;
+}
+
+#fixed .middle{
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    text-align: center;
+}
+
+#sticky .middle{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+}
