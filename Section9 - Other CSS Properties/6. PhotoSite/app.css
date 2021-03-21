@@ -1,0 +1,15 @@
+nav {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.75em;
+    padding: 20px 0;
+    margin-left: calc(10%/6);
+    border-bottom: 1px rgb(168, 168, 168) solid;
+    width: 30%;
+    text-transform: uppercase;
+}
+
+img {
+    width: 30%;
+    margin: calc(10%/6);
+}

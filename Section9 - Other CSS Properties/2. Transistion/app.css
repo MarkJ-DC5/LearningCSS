@@ -1,0 +1,57 @@
+div {
+    width: 300px;
+    height: 300px;
+    margin: 1em 0;
+    background-color: steelblue;
+}
+
+/*transition: <property> <duration> <timing-function> <delay>; */
+/* all - all property */
+/* No transition at load? */
+#circle1 {
+    transition: .5s;
+}
+
+#circle1:hover {
+    border-radius: 50%;
+    background-color: blueviolet;
+}
+
+
+#circle2 {
+    background-color: steelblue;
+    /* Only the background-color will be animated */
+    transition:background-color 1s 1s; 
+}
+
+#circle2:hover {
+    border-radius: 50%;
+    background-color: blueviolet;
+}
+
+#tfunct div {
+    width: 100px;
+    height: 100px;
+    transition: margin-left 1s;
+}
+
+#tfunct:hover #circle3 {
+    margin-left: 500px;
+    transition-timing-function: ease-in;
+}
+
+#tfunct:hover #circle4 {
+    margin-left: 500px;
+    transition-timing-function: ease-out;
+}
+
+#tfunct:hover #circle5 {
+    margin-left: 500px;
+    transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+}
+
+#tfunct:hover #circle6 {
+    margin-left: 500px;
+    transition-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
+}
+
