@@ -1,0 +1,77 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+section {
+    background-color: #003049;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+}
+
+
+/* Shorthand */
+/* flex: grow | shrink | basis  */
+
+#flexB section {
+    display: flex;
+}
+
+#flexB div {
+    width: 200px;
+    height: 200px;
+    flex-basis: 300px;
+    /* Initial size with respect to the main axis */
+}
+
+#flexG section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#flexG div {
+    width: 200px;
+    height: 200px;
+    flex-basis: 200px;
+    /* Initial size with respect to the main axis */
+}
+
+#flexG div:nth-of-type(1) {
+    flex-grow: 2;
+    /* amoung of space to take when there is available */
+}
+
+#flexG div:nth-of-type(5) {
+    flex-grow: 1;
+
+    max-width: 600px;
+    /* setting the max size for flex-grow */
+}
+
+
+#flexS section {
+    display: flex;
+    justify-content: center;
+}
+
+#flexS div {
+    width: 200px;
+    height: 200px;
+    flex-basis: 600px;
+    flex-shrink: 1;
+    /* shrink rate/ratio for when container is small */
+}
+
+#flexS div:nth-of-type(1) {
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+#flexS div:nth-of-type(5) {
+    flex-grow: 2;
+    flex-shrink: 0;
+}

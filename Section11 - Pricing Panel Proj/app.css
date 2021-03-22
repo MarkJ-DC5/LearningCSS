@@ -1,0 +1,128 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: content-box;
+}
+
+body {
+    background-color: #60a9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.panel {
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pricing-plan {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-plan:last-child {
+    border-bottom: none;
+}
+
+.pricing-img {
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.pricing-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-weight: bold;
+}
+
+.pricing-features {
+    margin: 3em 0 2em;
+    color: #60a9ff;
+}
+
+.pricing-features-item {
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-size: .7em;
+    line-height: 1.5;
+    padding: 1em 0;
+    border-top: .2em solid #e1f1ff;
+}
+
+.pricing-features-item:last-of-type {
+    border-bottom: .2em solid #e1f1ff;
+} 
+
+.pricing-price {
+    color: #60a9ff;
+    display: block;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.pricing-button {
+    border: .1em solid #9dd1ff;
+    border-radius: .5em;
+    color: #348efe;
+    text-decoration: none;
+    display: inline-block;
+    padding: .8em 2em;
+    margin: 2em 0;
+    transition: background-color .1s ease-in-out;
+} 
+
+.pricing-button:hover {
+    background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured {
+    background-color: #48aaff;
+    color: white;
+}
+
+.pricing-button.is-featured:hover {
+    background-color: #269aff;
+    color: white;
+}
+
+@media (min-width: 700px) {
+    .panel {
+        flex-direction: row;
+    }
+
+    .pricing-plan {
+        border-bottom: none;
+        padding: .5em 1.75em;
+    }
+
+    .pricing-plan {
+        border-left: 1px solid #e1f1ff;
+        border-right: 1px solid #e1f1ff;
+    }
+}
+
+/* .pricing-features-item {
+    border-top: 2px solid black;
+}
+
+.pricing-features-item:last-of-type {
+    border-bottom: 2px solid black;
+} 
+
+.pricing-button {
+    display: block;
+    text-decoration: none;
+    border: 1px solid black;
+    width: 30%;
+    height: 20%;
+    border-radius: 10px;
+} */

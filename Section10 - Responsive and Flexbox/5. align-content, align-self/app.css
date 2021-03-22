@@ -1,0 +1,50 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+section {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+}
+
+#flexAC section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    align-content: center;
+    /* controls the spacing for the cross axis of ALL ELEMENTS */
+}
+
+#flexAC div {
+    width: 200px;
+    height: 200px;
+}
+
+
+#flexAS section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* align-content: center; */
+}
+
+#flexAS div {
+    width: 200px;
+    height: 200px;
+} 
+
+#flexAS div:nth-of-type(3) {
+    align-self: flex-end;
+    /* controls the spacing for the cross axis of ONE ELEMENT */
+} 
+

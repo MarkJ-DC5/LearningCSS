@@ -1,0 +1,52 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+section {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+}
+#flexJC section {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    /* alignment with respect to the main axis */
+    /* flex-start - left align */
+    /* flex-end - Right align */
+    /* center - center align */
+    /* space-arround - equal space around element*/
+    /* space-between - equal space between element */
+    /* spave-evenly - equal space on all sides */
+}
+
+#flexJC div {
+    width: 200px;
+    height: 200px;
+} 
+
+
+#flexAI section {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    /* alignment with respect to the main axis */
+    /* alignment with respect to the main axis */
+    /* flex-start - left align */
+    /* flex-end - Right align */
+    /* center - center align */
+    /* space-arround - equal space around element*/
+    /* space-between - equal space between element */
+    /* spave-evenly - equal space on all sides */
+}
+
+#flexAI div {
+    width: 200px;
+    height: 200px;
+}

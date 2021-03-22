@@ -1,0 +1,36 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+section {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+}
+
+#flex section {
+    display: flex;
+    /* activate flexBox */
+    /* make sure elements fit in the container */
+
+    flex-direction: row;
+    /* row - default */
+    /* Flex Model */
+    /* 
+        Axis            row         column
+        Main Axis       x-axis      y-axis
+        Cross Axis      y-axis      x-axis
+    */
+}
+
+#flex div {
+    width: 200px;
+    height: 200px;
+} 
+
+
+
